@@ -1,0 +1,98 @@
+
+*{
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #fec260;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7ECDE;
+}
+.test{
+    border-bottom: 2px dotted #222;
+    padding: 5% 0;
+}
+.test h1{
+    font-family: paci,cursive;
+    position: relative;
+}
+.test h1::after{
+    content: "";
+    width: 20%;
+    height: 30%;
+    background-color: #fec260;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+@media screen and (max-width : 991.98px) {
+    .test h1::after{
+        width: 29%;
+        left: 35%;
+    }
+}
+@media screen and (max-width : 767.98px) {
+    .test h1::after{
+        width: 33%;
+        left: 33%;
+    }
+}
+.test h1:hover::after{
+    height: 50%;
+}
+@font-face {
+    font-family: paci;
+    src: url(../webfonts/Pacifico-Regular.ttf);
+}
+.item{    
+    font-family: righ,cursive;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+@font-face {
+    font-family: righ;
+    src: url(../webfonts/Righteous-Regular.ttf);
+}
+.inner{
+    border-bottom: 2px dotted #222;
+    padding: 2% 0;
+}
+.btntest{
+    margin-left: 45%;
+}
+
+#circleOne{
+    background-color: #f15f5d;
+}
+#circleTwo{
+    background-color: #febe2e;
+}
+#circleThree{
+    background-color: #4db748;
+}
+.circles span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.form-control:focus{
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.box-conent p {
+    font-family: bree,cursive;
+}
+@font-face {
+    font-family: bree;
+    src: url(../webfonts/BreeSerif-Regular.ttf);
+}
+.box-conent li i{
+    color: #f15f5d;
+}

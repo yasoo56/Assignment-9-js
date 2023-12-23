@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="test">
+            <h1 class="text-center">Bookmarker</h1>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center mt-4">
+            <i class="fa-solid fa-bookmark fs-1"></i>
+            <h2 class="px-2">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark fs-1"></i>
+        </div>
+        <div class="inner mt-3">
+            <label for="bookname" class="pb-2 fw-semibold"><i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+            <input type="text" id="bookname" placeholder="Bookmark Name" class="form-control mb-4">
+            <label for="bookurl" class="pb-2 fw-semibold">
+                <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input type="url" id="bookurl" placeholder="Website URL" class="form-control mb-2">
+            <button type="submit" class="btn btn-danger btntest mt-4 px-5" id="submitbtn">Submit</button>
+            <button type="submit" class="btn btn-danger btntest mt-4 px-5 d-none" id="updatebtn">Update</button>
+        </div>
+        <input type="text" placeholder="Search......" id="searchinput" class="form-control m-auto w-50 mt-4">
+        <table class="table text-center mt-4">
+            <thead class="fw-bold">
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="dataInfo">
+
+            </tbody>
+        </table>
+        <div class="box position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none"
+            id="model">
+            <div class="box-conent bg-white p-4 rounded-2 p-5 shadow">
+                <div class="head w-100 d-flex justify-content-between align-items-center mb-4 ">
+                    <div class="circles d-flex">
+                        <span class="rounded-circle me-2" id="circleOne"></span>
+                        <span class="rounded-circle me-2" id="circleTwo"></span>
+                        <span class="rounded-circle me-2" id="circleThree"></span>
+                    </div>
+                    <button type="button" class="btn-close"></button>
+                </div>
+                <p class="m-0 pb-2 fw-bold fs-5">
+                    Site Name or Url is not valid, Please follow the rules below :
+                </p>
+                <ul class="valid list-unstyled m-0">
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                        contain at least 3 characters
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                        valid one
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
