@@ -5,7 +5,6 @@ var updateBtn = document.querySelector('#updatebtn')
 var closeBtn = document.querySelector('.btn-close')
 var searchInp = document.querySelector('#searchinput')
 var model = document.querySelector('.box')
-// console.log(bookname)
 var visitBtn = document.querySelector('.visit')
 var indexGlobal = 0
 var bookList = []
